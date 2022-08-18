@@ -51,3 +51,6 @@
 
 ## Terraform AWS ECS Service
 [Guide](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_service)
+
+## Terraform AWS EKS Service
+[Guide](https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/18.8.1)
