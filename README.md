@@ -54,3 +54,7 @@
 
 ## Terraform AWS EKS Service
 [Guide](https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/18.8.1)
+
+## Terraform AWS EKS Config for EKS Provider
+[Guide](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs#examples)
+[Guide](https://github.com/hashicorp/terraform-provider-kubernetes/blob/main/_examples/eks/kubernetes-config/main.tf)
