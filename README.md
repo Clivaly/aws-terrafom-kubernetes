@@ -58,3 +58,9 @@
 ## Terraform AWS EKS Config for EKS Provider
 [Guide](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs#examples)
 [Guide](https://github.com/hashicorp/terraform-provider-kubernetes/blob/main/_examples/eks/kubernetes-config/main.tf)
+
+## Terraform AWS EKS Deployment
+[Guide](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/deployment)
+
+## Kubernetes Liveness Probe
+[Guide](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes)
