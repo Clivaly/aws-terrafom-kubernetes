@@ -56,7 +56,7 @@ resource "kubernetes_deployment" "Django-API" {
 # Kubernetes Service - Load Balancer
 resource "kubernetes_service" "LoadBalancer" {
   metadata {
-    nome = "django"
+    nome = "load-balancer-django-api"
   }
   spec {
     selector = {
@@ -68,4 +68,14 @@ resource "kubernetes_service" "LoadBalancer" {
     }
     type = "LoadBalancer"
   }
+}
+
+data "kubernetes_service" "DNSname" {
+  metadata {
+    nome = "load-balancer-django-api"
+  }
+}
+
+output "URL" {
+  value = data.kubernetes_service.DNSname.status
 }
