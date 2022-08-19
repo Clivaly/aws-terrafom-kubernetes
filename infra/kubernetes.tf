@@ -25,7 +25,7 @@ resource "kubernetes_deployment" "Django-API" {
       spec {
         container {
           image = "123456789101.dkr.ecr.us-west-2.amazonaws.com/prod:v1"
-          name  = "django-eks"
+          name  = "django"
 
           resources {
             limits = {
@@ -50,5 +50,22 @@ resource "kubernetes_deployment" "Django-API" {
         }
       }
     }
+  }
+}
+
+# Kubernetes Service - Load Balancer
+resource "kubernetes_service" "LoadBalancer" {
+  metadata {
+    nome = "django"
+  }
+  spec {
+    selector = {
+        nome = "django"
+    }
+    port {
+      port        = 8000   # Machine port
+      target_port = 8000   # Container port
+    }
+    type = "LoadBalancer"
   }
 }

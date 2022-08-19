@@ -64,3 +64,6 @@
 
 ## Kubernetes Liveness Probe
 [Guide](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes)
+
+## Terraform AWS EKS Load Balancer Service
+[Guide](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/service#example-using-aws-load-balancer)
